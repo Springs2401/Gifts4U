@@ -15,17 +15,18 @@
 
 <body>
     <section id="header">
-        <a href="../index.html"><img src="../PICTURES/Logo/LogoRed.png" class="logo" alt="Gifts4U Logo Image"></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="text-link" href="../index.html">Home</a></li>
-                <li><a class="text-link active" href="../HTML/shop.html">Shop</a></li>
-                <li><a class="text-link" href="../HTML/blog.html">Blog</a></li>
-                <li><a class="text-link" href="../HTML/about.html">About</a></li>
-                <li><a class="text-link" href="../HTML/contact.html">Contact</a></li>
-                <li><a href="../HTML/cart.html"><i class="fa fa-shopping-cart"></i></a></li>
-            </ul>
-        </div>
+        <a href="../index.html">
+            <img src="../PICTURES/Logo/LogoRed.png" class="logo" alt="Gifts4U Logo Image">
+        </a>
+        <button id="bar" aria-label="Toggle navigation">☰</button>
+        <ul id="navbar">
+            <li><a class="text-link" href="../index.html">Home</a></li>
+            <li><a class="text-link active" href="../HTML/shop.html">Shop</a></li>
+            <li><a class="text-link" href="../HTML/blog.html">Blog</a></li>
+            <li><a class="text-link" href="../HTML/about.html">About</a></li>
+            <li><a class="text-link" href="../HTML/contact.html">Contact</a></li>
+            <li><a href="../HTML/cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
     </section>
 
     <section id="pro-details" class="section-p1">
@@ -53,8 +54,8 @@
             <h6>Home / Home Decor</h6>
             <h4>Christmas Fragrance Aromatherapy Tablets (Set of 3)</h4>
             <h2>AED 29.99</h2>
-            <input type="number" value="1" min="1">
-            <a href="../HTML/cart.html"><button>Add To Cart</button></a>
+            <input type="number" id="product-qty" value="1" min="1">
+            <a href="../HTML/cart.html" onclick="addProductPageToCart(event, 'Christmas Fragrance Aromatherapy Tablets (Set of 3)', 29.99, '../PICTURES/Products/NewArrivals/Aromatherapy.jpg')"><button>Add To Cart</button></a>
             <h4>Product Details</h4>
             <span>Elevate your holiday ambiance with this set of Christmas Fragrance Aromatherapy Tablets. Infused with delightful seasonal scents, each tablet releases a soothing aroma that enhances the festive spirit in your home. Perfect for use in living rooms, bedrooms, or bathrooms, these aromatherapy tablets create a warm and inviting atmosphere. Whether you’re hosting a holiday gathering or enjoying a quiet evening at home, this set of three aromatic tablets brings the essence of Christmas to every corner of your space.</span>
         </div>
@@ -78,7 +79,7 @@
                     </div>
                     <h4>AED 88.00</h4>
                 </div>
-                <a href="http://127.0.0.1:5500./HTML/cart.html#"><i class="fas fa-shopping-cart cart"></i></a>
+                <a href="#" onclick="addToCart(event, 'Wooden Christmas Nutcracker Soldiers (Set of 2)', 88.00, '../PICTURES/Products/NewArrivals/Nutcrackers.jpg')"><i class="fas fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro" onclick="window.location.href='product-stitch.html';">
                 <img src="../PICTURES/Products/NewArrivals/Stitch.jpg" alt="Stitch Christmas Women’s T-Shirt">
@@ -93,7 +94,7 @@
                     </div>
                     <h4>AED 50.00</h4>
                 </div>
-                <a href="http://127.0.0.1:5500./HTML/cart.html#"><i class="fas fa-shopping-cart cart"></i></a>
+                <a href="#" onclick="addToCart(event, 'Disney Stitch Christmas Women’s T-Shirt', 50.00, '../PICTURES/Products/NewArrivals/Stitch.jpg')"><i class="fas fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro" onclick="window.location.href='product-barnetts.html';">
                 <img src="../PICTURES/Products/NewArrivals/Barnetts.jpg" alt="Barnetts Christmas Cookie Gift Box">
@@ -109,7 +110,7 @@
                     </div>
                     <h4>AED 132.15</h4>
                 </div>
-                <a href="http://127.0.0.1:5500./HTML/cart.html#"><i class="fas fa-shopping-cart cart"></i></a>
+                <a href="#" onclick="addToCart(event, 'Barnetts Christmas Cookie Gift Box', 132.15, '../PICTURES/Products/NewArrivals/Barnetts.jpg')"><i class="fas fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro" onclick="window.location.href='product-elf.html';">
                 <img src="../PICTURES/Products/NewArrivals/Elf.jpg" alt="Scout Elf and Storybook Set">
@@ -125,7 +126,7 @@
                     </div>
                     <h4>AED 121.03</h4>
                 </div>
-                <a href="http://127.0.0.1:5500./HTML/cart.html#"><i class="fas fa-shopping-cart cart"></i></a>
+                <a href="#" onclick="addToCart(event, 'Scout Elf and Storybook Set', 121.03, '../PICTURES/Products/NewArrivals/Elf.jpg')"><i class="fas fa-shopping-cart cart"></i></a>
             </div>
         </div>
     </section>
@@ -135,16 +136,10 @@
             <h4>Stay Updated with Our Latest Deals!</h4>
             <p>Join our community and be the first to know about exclusive offers, new arrivals, and special promotions. <span>Sign up today</span> and enjoy the best of the festive season delivered straight to your inbox.</p>
         </div>
-        <div class="form">
-            <div style="display: flex;  padding: 16px;">
-                <div style="width: 20rem; ">
-                    <input type="text" placeholder="Your Email Address" style="width: 100%; padding: 8px;">
-                </div>
-                <div style="padding: 4px;">
-                    <button style="width: 100%; padding: 14px;">Subscribe Now</button>
-                </div>
-            </div>
-        </div>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your Email Address" aria-label="Email address">
+            <button type="submit">Subscribe Now</button>
+        </form>
     </section>
 
     <footer class="section-p1">
@@ -157,28 +152,28 @@
             <div class="follow">
                 <h4>Follow Us</h4>
                 <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-youtube"></i>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
 
         <div class="col">
             <h4>About</h4>
-            <a href="#">About Us</a>
+            <a href="./about.html">About Us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="./contact.html">Contact Us</a>
         </div>        
         
         <div class="col">
             <h4>My Account</h4>
             <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
+            <a href="./cart.html">View Cart</a>
             <a href="#">My Wishlist</a>
             <a href="#">Track My Order</a>
             <a href="#">Help</a>
@@ -196,7 +191,7 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright © 2024 Gifts4U</p>
+            <p>&copy; 2026 Gifts4U. All rights reserved.</p>
         </div>
     </footer>
 
@@ -227,6 +222,7 @@
         }
     </script>
 
+    <script src="../JS/cart.js"></script>
     <script src="../JS/script.js"></script>
 </body>
 

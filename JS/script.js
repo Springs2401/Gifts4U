@@ -1,15 +1,16 @@
 const bar = document.getElementById('bar');
-const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
 
-if (bar) {
+if (bar && nav) {
     bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
-}
+        nav.classList.toggle('active');
+        bar.textContent = nav.classList.contains('active') ? '✕' : '☰';
+    });
 
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
+    document.querySelectorAll('#navbar a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            bar.textContent = '☰';
+        });
+    });
 }

@@ -15,17 +15,18 @@
 
 <body>
     <section id="header">
-        <a href="../index.html"><img src="../PICTURES/Logo/LogoRed.png" class="logo" alt="Gifts4U Logo Image"></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="text-link" href="../index.html">Home</a></li>
-                <li><a class="text-link" href="../HTML/shop.html">Shop</a></li>
-                <li><a class="text-link active" href="../HTML/blog.html">Blog</a></li>
-                <li><a class="text-link" href="../HTML/about.html">About</a></li>
-                <li><a class="text-link" href="../HTML/contact.html">Contact</a></li>
-                <li><a href="../HTML/cart.html"><i class="fa fa-shopping-cart"></i></a></li>
-            </ul>
-        </div>
+        <a href="../index.html">
+            <img src="../PICTURES/Logo/LogoRed.png" class="logo" alt="Gifts4U Logo Image">
+        </a>
+        <button id="bar" aria-label="Toggle navigation">☰</button>
+        <ul id="navbar">
+            <li><a class="text-link" href="../index.html">Home</a></li>
+            <li><a class="text-link" href="../HTML/shop.html">Shop</a></li>
+            <li><a class="text-link active" href="../HTML/blog.html">Blog</a></li>
+            <li><a class="text-link" href="../HTML/about.html">About</a></li>
+            <li><a class="text-link" href="../HTML/contact.html">Contact</a></li>
+            <li><a href="../HTML/cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
     </section>
 
     <section id="blog-header">
@@ -124,16 +125,10 @@
             <h4>Stay Updated with Our Latest Deals!</h4>
             <p>Join our community and be the first to know about exclusive offers, new arrivals, and special promotions. <span>Sign up today</span> and enjoy the best of the festive season delivered straight to your inbox.</p>
         </div>
-        <div class="form">
-            <div style="display: flex;  padding: 16px;">
-                <div style="width: 20rem; ">
-                    <input type="text" placeholder="Your Email Address" style="width: 100%; padding: 8px;">
-                </div>
-                <div style="padding: 4px;">
-                    <button style="width: 100%; padding: 14px;">Subscribe Now</button>
-                </div>
-            </div>
-        </div>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your Email Address" aria-label="Email address">
+            <button type="submit">Subscribe Now</button>
+        </form>
     </section>
 
     <footer class="section-p1">
@@ -146,28 +141,28 @@
             <div class="follow">
                 <h4>Follow Us</h4>
                 <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-youtube"></i>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
 
         <div class="col">
             <h4>About</h4>
-            <a href="#">About Us</a>
+            <a href="./about.html">About Us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="./contact.html">Contact Us</a>
         </div>        
         
         <div class="col">
             <h4>My Account</h4>
             <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
+            <a href="./cart.html">View Cart</a>
             <a href="#">My Wishlist</a>
             <a href="#">Track My Order</a>
             <a href="#">Help</a>
@@ -185,11 +180,12 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright © 2024 Gifts4U</p>
+            <p>&copy; 2026 Gifts4U. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="../JS/script.js"></script>
+    <script src="../JS/cart.js"></script>
 </body>
 <!-- comment -->
 </html>
