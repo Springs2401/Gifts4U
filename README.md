@@ -1,8 +1,8 @@
-# Gifts4U – Christmas E—commerce Website
+# Gifts4U – Christmas E-commerce Website
 
-A responsive front—end e—commerce website built using HTML, CSS, and JavaScript, designed to simulate a festive online shopping experience.
+A responsive front-end e-commerce website built using HTML, CSS, and JavaScript, designed to simulate a festive online shopping experience.
 
-**Note**: This project is an improved version of my previous project (**[Gifts4U—2](https://github.com/Springs2401/Gifts4U-2)**), with enhancements in design, structure, and user experience.
+**Note**: This project is an improved version of my previous project (**[Gifts4U-2](https://github.com/Springs2401/Gifts4U-2)**), with enhancements in design, structure, and user experience.
 
 ## Live Demo
 
@@ -10,7 +10,7 @@ https://springs2401.github.io/Gifts4U/
 
 ## Project Overview
 
-This project focuses on applying key web design and development principles to create a functional and visually engaging user experience. It integrates visual design principles (colour theory, typography, hierarchy), responsive design techniques, and interactive features using JavaScript to simulate a basic e—commerce flow.
+This project focuses on applying key web design and development principles to create a functional and visually engaging user experience. It integrates visual design principles (colour theory, typography, hierarchy), responsive design techniques, and interactive features using JavaScript to simulate a basic e-commerce flow.
 
 ## Design Highlights
 
@@ -46,11 +46,11 @@ This project focuses on applying key web design and development principles to cr
 
 ## Limitations
 
-— Not built using a mobile—first approach  
+— Not built using a mobile-first approach  
 — Limited accessibility compliance  
-— No backend integration (front—end only simulation)  
+— No backend integration (front-end only simulation)  
 — No advanced optimisation techniques (e.g., lazy loading, minification)  
-— File—based structure limits scalability  
+— File-based structure limits scalability  
 
 ## Future Improvements
 
