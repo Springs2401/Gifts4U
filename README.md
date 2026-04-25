@@ -2,7 +2,7 @@
 
 A responsive front—end e—commerce website built using HTML, CSS, and JavaScript, designed to simulate a festive online shopping experience.
 
-**Note**: This project is an improved version of my previous project (**Gifts4U—2**), with enhancements in design, structure, and user experience.
+**Note**: This project is an improved version of my previous project (**[Gifts4U—2](https://github.com/Springs2401/Gifts4U-2)**), with enhancements in design, structure, and user experience.
 
 ## Live Demo
 
