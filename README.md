@@ -1,4 +1,4 @@
-# Gifts4U – Christmas E-commerce Website
+# Gifts4U – Christmas E-Commerce Website
 
 A responsive front-end e-commerce website built using HTML, CSS, and JavaScript, designed to simulate a festive online shopping experience.
 
