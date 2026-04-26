@@ -54,8 +54,8 @@ This project focuses on applying key web design and development principles to cr
 
 ## Future Improvements
 
-— Adopt a mobile—first design strategy  
+— Adopt a mobile-first design strategy  
 — Improve accessibility using semantic HTML and WCAG guidelines  
-— Introduce component—based architecture (e.g., React)  
-— Integrate backend for full e—commerce functionality  
+— Introduce component-based architecture (e.g., React)  
+— Integrate backend for full e-commerce functionality  
 — Apply performance optimisation techniques
